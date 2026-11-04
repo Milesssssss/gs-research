@@ -15,9 +15,9 @@ as of 2026-11-04（Asia/Shanghai）
 
 | 阶段 | 状态 | 内容 | 完成判据 |
 | --- | --- | --- | --- |
-| S0 | `in_progress` | 环境指纹（见 [S0_env_fingerprint.md](S0_env_fingerprint.md)）；按 README 安装 DISCOVERSE，目标 Python 3.11/3.12 venv，只准备 MuJoCo 子集 | 指纹已落盘；安装日志可复述。不等待 GPU |
-| S1 | `pending` | DISCOVERSE 自带最小 MuJoCo demo（空场景或官方样例） | 绿灯。不过则停，回报安装日志 |
-| S2 | `pending` | GraspClutter6D 单 bin（优先 `hard/000091`）+ 对应 YCB mesh | 仅子集。禁止下全量 ~220GB |
+| S0 | `done` | 环境指纹（见 [S0_env_fingerprint.md](S0_env_fingerprint.md)）；DISCOVERSE 安装到可跑 MuJoCo 子集 | 指纹已落盘。GPU 保持无。不等待 GPU |
+| S1 | `done` / PASS | 官方最小 MuJoCo demo：空场景 2500 step。discoverse 1.9.0 + mujoco 3.17.0；`MUJOCO_GL=egl`。见 [S1_result.md](S1_result.md) | PASS。A1 = SKIP，G1 = SKIP，GPU = 无 |
+| S2 | `in_progress` | GraspClutter6D 单 bin（优先 `hard/000091`）+ 对应 YCB mesh | 仅子集。禁止下全量 ~220GB |
 | S3 | `pending` | DISCOVERSE-Real2Sim：多视/规定输入 → 前景分割 → mesh/碰撞 → MJCF。不含 3DGS / 外观 | 记录 L1 分段耗时。不进入 GPU 重建 |
 | S4 | `pending` | 加载场景；静置 5–10s；填穿透与沉降 | C1 与 N1 均 PASS。任一项 FAIL 不得进入 S5 |
 | S5 | `pending` | 脚本接近-抓取-放置 ×10；成功/失败各至少 1 段短视频 | P1：≥ 8/10 为 PASS |

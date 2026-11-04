@@ -1,6 +1,6 @@
 # E5 Real-to-Sim 冒烟
 
-状态：**S0 `in_progress`**（as of 2026-11-04 Asia/Shanghai）
+状态：**S1 PASS**；正在 **S2** GraspClutter6D 单 bin（优先 `hard/000091`）。as of 2026-11-04 Asia/Shanghai。
 
 任务页：<https://cursor.com/canvas/store-eb11796c-54ba-44fb-bb2f-0396f82f2c6b/aba3665d-b93c-4f8d-8b0d-030b76a9cbab>
 
@@ -37,7 +37,7 @@
 | G1 几何保真 | SKIP | 用户拍板跳过（含 3DGS / GPU 重建） | 本轮不测，勿等 GPU |
 | A1 外观保真 | SKIP | 用户拍板跳过（含 3DGS / 外观） | 本轮不测，勿等 GPU |
 
-S1 传感器闭环与 T1 吞吐属后续周次，不在本轮必过集。L1 耗时全程记录：捕获到首条成功 demo 的人机时目标 ≤ 8h，超时写阻塞原因。
+任务页里的传感器闭环门禁（亦编号 S1）与 T1 吞吐属后续周次，与本目录阶段 S1（官方空场景 demo，已 PASS）不是同一项。L1 耗时全程记录：捕获到首条成功 demo 的人机时目标 ≤ 8h，超时写阻塞原因。
 
 ## 派工
 
@@ -47,5 +47,7 @@ S1 传感器闭环与 T1 吞吐属后续周次，不在本轮必过集。L1 耗�
 
 ## 日志
 
-- 环境指纹：[S0_env_fingerprint.md](S0_env_fingerprint.md)
-- 阶段清单：[checklist.md](checklist.md)
+- 环境指纹：[S0_env_fingerprint.md](S0_env_fingerprint.md)（S0 `done`）
+- S1 结果：[S1_result.md](S1_result.md)（空场景 2500 step PASS；GPU = 无）
+- 阶段清单：[checklist.md](checklist.md)（S2 `in_progress`）
+- 执行机本地详细日志（只引用路径，全文未推送到本仓）：`/workspace/real2sim-research/E5_S0_env_fingerprint_2026-11-04.md`

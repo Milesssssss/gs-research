@@ -25,4 +25,4 @@ experiments/E5-real2sim-smoke/
 
 | ID | 目录 | 状态 | 说明 |
 | --- | --- | --- | --- |
-| E5 | [experiments/E5-real2sim-smoke](experiments/E5-real2sim-smoke/README.md) | S0 `in_progress` | Real-to-Sim 冒烟。本轮仅 MuJoCo 几何-物理子集；A1/G1 = `SKIP`；勿再等待 GPU |
+| E5 | [experiments/E5-real2sim-smoke](experiments/E5-real2sim-smoke/README.md) | S1 PASS；S2 `in_progress` | Real-to-Sim 冒烟。本轮仅 MuJoCo 几何-物理子集；A1/G1 = `SKIP`；GPU = 无；勿再等待 GPU |
