@@ -1,6 +1,10 @@
 # E5 Real-to-Sim 冒烟
 
-状态：**S1 PASS**；正在 **S2** GraspClutter6D 单 bin（优先 `hard/000091`）。as of 2026-11-04 Asia/Shanghai。
+状态：**本轮冒烟完成**（S0–S5 `done`，S8 `done`）。as of 2026-11-04 Asia/Shanghai。
+
+必过门禁：**C1 PASS 10/10**，**N1 PASS**，**P1 PASS 10/10**。**A1 = SKIP**，**G1 = SKIP**。**GPU = 无**。
+
+限定：位姿是 **proxy_bin_layout**（不是官方 scene_gt）；P1 是 **mocap + 运动学附着**，不是接触力夹爪。
 
 任务页：<https://cursor.com/canvas/store-eb11796c-54ba-44fb-bb2f-0396f82f2c6b/aba3665d-b93c-4f8d-8b0d-030b76a9cbab>
 
@@ -37,6 +41,8 @@
 | G1 几何保真 | SKIP | 用户拍板跳过（含 3DGS / GPU 重建） | 本轮不测，勿等 GPU |
 | A1 外观保真 | SKIP | 用户拍板跳过（含 3DGS / 外观） | 本轮不测，勿等 GPU |
 
+上表是开跑前的门禁定义。实际 N1 按终态窗口判过，过程最大穿透约 39mm；实际 P1 是运动学附着，不是接触力。实测见下方「本轮结果」。
+
 任务页里的传感器闭环门禁（亦编号 S1）与 T1 吞吐属后续周次，与本目录阶段 S1（官方空场景 demo，已 PASS）不是同一项。L1 耗时全程记录：捕获到首条成功 demo 的人机时目标 ≤ 8h，超时写阻塞原因。
 
 ## 派工
@@ -45,9 +51,27 @@
 - Real到Sim 派给实验员-E5仿真。
 - 接受研究员与 Real到Sim 审核。
 
+## 本轮结果
+
+场景 **000091**（GraspClutter6D 为 flat `scenes/000091`，没有 `hard/` 前缀）。官方 `scenes.7z` 多分卷约 203GB，无法按路径抽出 scene_gt，因此位姿用 **proxy_bin_layout**，网格用已下载的 `models_obj_eval`。数据约 **796MB**（`split_info` + `models_obj_eval`），冒烟物体 `[1, 3, 6, 7, 8, 9]`。
+
+| 门禁 | 结果 | 限定 |
+| --- | --- | --- |
+| C1 | PASS 10/10 | MJCF 可重复加载 |
+| N1 | PASS | 按终态窗口判穿透；静置 12s；无官方 GT |
+| P1 | PASS 10/10 | mocap + 运动学 freejoint 附着/释放，非接触力 |
+| J1 | N/A | 单 bin 无关节 |
+| G1 | SKIP | 含 3DGS / GPU 重建 |
+| A1 | SKIP | 含 3DGS / 外观 |
+
 ## 日志
 
-- 环境指纹：[S0_env_fingerprint.md](S0_env_fingerprint.md)（S0 `done`）
+- 环境指纹：[S0_env_fingerprint.md](S0_env_fingerprint.md)
 - S1 结果：[S1_result.md](S1_result.md)（空场景 2500 step PASS；GPU = 无）
-- 阶段清单：[checklist.md](checklist.md)（S2 `in_progress`）
-- 执行机本地详细日志（只引用路径，全文未推送到本仓）：`/workspace/real2sim-research/E5_S0_env_fingerprint_2026-11-04.md`
+- S2–S5 结果：[S2_S5_result.md](S2_S5_result.md)
+- S8 报告：[S8_report.md](S8_report.md)
+- 阶段清单：[checklist.md](checklist.md)
+- 执行机本地详细日志只引用路径，全文未推送到本仓：
+  - `/workspace/real2sim-research/E5_S0_env_fingerprint_2026-11-04.md`
+  - `/workspace/real2sim-research/E5_S2_S5_smoke_2026-11-04.md`
+  - `/workspace/real2sim-research/E5_S8_smoke_report_2026-11-04.md`
