@@ -1,6 +1,6 @@
 # E5 Real-to-Sim 冒烟 · 归档结论（PASS\*）
 
-日志仓归档：`experiments/E5-real2sim-smoke/PASS_star_conclusion.md`
+日志仓归档：`experiments/E5-real-to-sim/runs/2026-11-04-real2sim-smoke/PASS_star_conclusion.md`
 
 - 日期：2026-11-04（Asia/Shanghai）
 - 执行：实验员-E5仿真
@@ -56,7 +56,7 @@
 
 | 类型 | 路径 |
 | --- | --- |
-| 本结论（日志仓） | `experiments/E5-real2sim-smoke/PASS_star_conclusion.md` |
+| 本结论（日志仓） | `experiments/E5-real-to-sim/runs/2026-11-04-real2sim-smoke/PASS_star_conclusion.md` |
 | 本结论（执行机原文） | `/workspace/real2sim-research/E5_PASS_star_conclusion_2026-11-04.md` |
 | S8 报告 | `/workspace/real2sim-research/E5_S8_smoke_report_2026-11-04.md` |
 | S2–S5 日志 | `/workspace/real2sim-research/E5_S2_S5_smoke_2026-11-04.md` |

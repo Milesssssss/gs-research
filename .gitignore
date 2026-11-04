@@ -1,0 +1,38 @@
+# 大文件不进 Git 历史。必须版本化时用 Git LFS 或外链，见 docs/process.md。
+
+# 高斯、点云、网格、权重、视频、数据包
+*.ply
+*.splat
+*.pcd
+*.las
+*.laz
+*.obj
+*.stl
+*.fbx
+*.glb
+*.gltf
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# 训练与日志目录
+outputs/
+wandb/
+logs/
+runs/
+!experiments/**/runs/
+!experiments/**/runs/**
