@@ -14,7 +14,5 @@
 
 ## 数据
 
-- 本轮：interim Isaac `frame000000.png`（1280×720）。
-- 缺口：官方 NICE-SLAM Replica office0 RGB。到位后再重跑分割、语义、几何。
-
-实测表见 [`2026-11-04-min-run.md`](2026-11-04-min-run.md)。
+- 本轮交付：interim Isaac `frame000000.png`（1280×720）。官方 Replica office0 本轮不做，不阻塞。
+- 本轮结论：分割 + 语义 + D1/D2 通过。见 [`2026-11-04-min-run.md`](2026-11-04-min-run.md)。
