@@ -4,7 +4,9 @@
 
 ## 当前状态
 
-尚无 run，无结论。门禁表里没有预置阈值，也没有预填的通过记录。
+2026-11-04 冒烟已归档为 **PASS\***（有条件合格）。降级 = proxy_bin + 运动学 P1。A1 = SKIP，G1 = SKIP，GPU = 无。本轮 closed，不再扩 scope。全文在 [runs/2026-11-04-real2sim-smoke](runs/2026-11-04-real2sim-smoke/README.md)，归档结论见 [PASS_star_conclusion.md](runs/2026-11-04-real2sim-smoke/PASS_star_conclusion.md)。
+
+[runs/_template.md](runs/_template.md) 仍是空模板，没有改成当次结果。门禁表里没有预置成对以后每条 run 都生效的阈值，也没有把当次数字填进下表。下一次 run 仍复制模板，另起文件。
 
 ## 门禁 C1 / N1 / P1
 

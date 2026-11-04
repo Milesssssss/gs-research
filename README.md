@@ -51,4 +51,4 @@ experiments/<线>/runs/          该线的单次 run；_template.md 是空模板
 - [E2 质量—速度帕累托](experiments/E2-quality-speed/README.md)
 - [E3 GS→Mesh 可仿真](experiments/E3-gs-to-mesh/README.md)
 - [E4 在线语义建图](experiments/E4-online-semantic/README.md)
-- [E5 Real-to-Sim 冒烟](experiments/E5-real-to-sim/README.md)
+- [E5 Real-to-Sim 冒烟](experiments/E5-real-to-sim/README.md)。2026-11-04 已归档为 PASS\*（有条件合格）：降级 = proxy_bin + 运动学 P1；A1/G1 = SKIP；GPU = 无。见 [归档结论](experiments/E5-real-to-sim/runs/2026-11-04-real2sim-smoke/PASS_star_conclusion.md)。
