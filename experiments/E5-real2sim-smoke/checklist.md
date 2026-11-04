@@ -2,6 +2,10 @@
 
 as of 2026-11-04（Asia/Shanghai）
 
+## 归档
+
+本轮 **closed as PASS\***（有条件合格）。降级 = proxy_bin + 运动学 P1。见 [PASS_star_conclusion.md](PASS_star_conclusion.md)。不再扩 scope。
+
 状态取值：`pending`、`in_progress`、`done`、`skip`、`blocked`。
 
 ## 本轮锁定

@@ -1,10 +1,10 @@
 # E5 Real-to-Sim 冒烟
 
-状态：**本轮冒烟完成**（S0–S5 `done`，S8 `done`）。as of 2026-11-04 Asia/Shanghai。
+结论：**PASS\***（有条件合格）。主研究员评估，Real到Sim 归档。本轮 closed。as of 2026-11-04 Asia/Shanghai。
 
-必过门禁：**C1 PASS 10/10**，**N1 PASS**，**P1 PASS 10/10**。**A1 = SKIP**，**G1 = SKIP**。**GPU = 无**。
+降级 = **proxy_bin** + **运动学 P1**。C1 / N1 / P1 数值达标；这不是完整官方接触抓取闭环。A1 = SKIP，G1 = SKIP，GPU = 无。
 
-限定：位姿是 **proxy_bin_layout**（不是官方 scene_gt）；P1 是 **mocap + 运动学附着**，不是接触力夹爪。
+归档：[PASS_star_conclusion.md](PASS_star_conclusion.md)。本轮不再扩 scope。
 
 任务页：<https://cursor.com/canvas/store-eb11796c-54ba-44fb-bb2f-0396f82f2c6b/aba3665d-b93c-4f8d-8b0d-030b76a9cbab>
 
@@ -66,6 +66,7 @@
 
 ## 日志
 
+- 归档结论：[PASS_star_conclusion.md](PASS_star_conclusion.md)（PASS\*）
 - 环境指纹：[S0_env_fingerprint.md](S0_env_fingerprint.md)
 - S1 结果：[S1_result.md](S1_result.md)（空场景 2500 step PASS；GPU = 无）
 - S2–S5 结果：[S2_S5_result.md](S2_S5_result.md)

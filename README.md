@@ -25,4 +25,4 @@ experiments/E5-real2sim-smoke/
 
 | ID | 目录 | 状态 | 说明 |
 | --- | --- | --- | --- |
-| E5 | [experiments/E5-real2sim-smoke](experiments/E5-real2sim-smoke/README.md) | 本轮冒烟完成 | C1/N1/P1 PASS；A1/G1 = `SKIP`；GPU = 无。proxy 布局 + 运动学 P1 |
+| E5 | [experiments/E5-real2sim-smoke](experiments/E5-real2sim-smoke/README.md) | closed as PASS\* | 有条件合格。降级 = proxy_bin + 运动学 P1。A1/G1 = SKIP；GPU = 无 |
